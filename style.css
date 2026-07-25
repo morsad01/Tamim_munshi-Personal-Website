@@ -2095,18 +2095,20 @@ body.js .reveal.visible {
 }
 
 /* --------------------------------------------------------------------------
-   19. RESPONSIVE BREAKPOINTS
+   19. COMPREHENSIVE MOBILE & TABLET RESPONSIVE BREAKPOINTS
    -------------------------------------------------------------------------- */
 @media (max-width: 1024px) {
-  .hero-editorial-grid, .editorial-split-grid, .contact-grid {
-    grid-template-columns: 1fr;
-    gap: var(--space-32);
+  :root {
+    --font-size-hero: clamp(2.4rem, 5vw, 3.2rem);
+    --font-size-section: clamp(1.9rem, 3.5vw, 2.3rem);
   }
 
-  .hero-project-spotlight {
+  .hero-editorial-grid, 
+  .editorial-split-grid, 
+  .contact-grid,
+  .project-featured-grid {
     grid-template-columns: 1fr;
-    gap: var(--space-32);
-    padding: var(--space-32);
+    gap: 28px;
   }
 
   .skills-matrix-grid {
@@ -2114,7 +2116,8 @@ body.js .reveal.visible {
   }
 
   .service-editorial-item {
-    grid-template-columns: 60px 1fr;
+    grid-template-columns: 50px 1fr;
+    gap: 16px;
   }
 
   .service-desc-box {
@@ -2123,19 +2126,47 @@ body.js .reveal.visible {
 }
 
 @media (max-width: 768px) {
+  :root {
+    --font-size-hero: 2rem;          /* Clean mobile title size */
+    --font-size-section: 1.75rem;    /* ~28px on mobile */
+    --font-size-card: 1.15rem;      /* ~18.5px on mobile */
+    --font-size-body: 0.95rem;      /* ~15.2px on mobile */
+    --space-120: 56px;              /* Compact section padding on mobile */
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+
+  .section-head {
+    margin-bottom: 28px;
+  }
+
+  /* Mobile Glass Header Menu */
+  .nav-actions .btn-primary {
+    display: none; /* Hide duplicate button on mobile header to give plenty of space */
+  }
+
   .nav-menu {
     position: fixed;
     top: var(--nav-height);
     left: 0;
     width: 100%;
     background: var(--card);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     flex-direction: column;
-    padding: var(--space-24);
-    gap: var(--space-20);
-    box-shadow: var(--glass-shadow);
+    padding: 24px;
+    gap: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     border-bottom: 1px solid var(--border);
     transform: translateY(-150%);
     transition: transform var(--transition-normal);
+    z-index: 1000;
   }
 
   .nav-menu.active {
@@ -2146,26 +2177,144 @@ body.js .reveal.visible {
     display: flex;
   }
 
-  .footer-top-grid {
-    grid-template-columns: 1fr;
+  /* Hero Mobile Styling */
+  .hero {
+    padding-top: 16px;
   }
 
-  .hero-metrics-bar {
-    flex-wrap: wrap;
-    gap: var(--space-16);
+  .hero-headline {
+    font-size: clamp(1.65rem, 6.2vw, 2.1rem);
+    line-height: 1.25;
+    margin-bottom: 16px;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 
-  .metrics-flex-row {
+  .hero-paragraph {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    margin-bottom: 24px;
+  }
+
+  .hero-btn-group {
     flex-direction: column;
-    gap: var(--space-24);
+    width: 100%;
+    gap: 12px;
+  }
+
+  .hero-btn-group .btn {
+    width: 100%;
+  }
+
+  .hero-portrait-frame {
+    width: 100%;
+    max-width: 320px;
+    margin: 16px auto 0 auto;
+    display: flex;
+    justify-content: center;
   }
 
   .portrait-card {
-    max-width: 100%;
-    height: 380px;
+    width: 100%;
+    max-width: 320px;
+    height: 390px;
+    border-radius: 28px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   }
 
-  .mockup-carousel-viewport {
-    height: 240px;
+  .portrait-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 15%; /* Perfectly frames head and torso on mobile */
+  }
+
+  /* Cards Mobile Padding & Radius */
+  .glass-card,
+  .featured-project-card,
+  .skill-card-modern,
+  .contact-info-card,
+  .contact-form-card {
+    padding: 20px !important;
+    border-radius: 18px !important;
+  }
+
+  .project-image-container {
+    height: 220px;
+  }
+
+  .project-card-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-card-actions .btn {
+    width: 100%;
+  }
+
+  /* Journey Timeline Mobile */
+  .journey-timeline {
+    padding-left: 20px;
+  }
+
+  .journey-dot {
+    left: -20px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .journey-box {
+    padding: 20px !important;
+  }
+
+  /* Services Mobile */
+  .service-editorial-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 20px !important;
+  }
+
+  .service-desc-box {
+    grid-column: span 1;
+  }
+
+  /* Contact Mobile */
+  .contact-method-item {
+    padding: 12px 14px;
+  }
+
+  .contact-method-value {
+    font-size: 0.85rem;
+  }
+
+  /* Footer Mobile */
+  .footer {
+    padding: 48px 0 24px 0;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-logo {
+    font-size: 1.3rem;
+  }
+
+  .hero-headline {
+    font-size: 1.75rem;
+  }
+
+  .portrait-card {
+    max-width: 290px;
+    height: 360px;
   }
 }
