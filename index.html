@@ -81,11 +81,6 @@
     <section id="hero" class="hero">
       <div class="container hero-editorial-grid">
         <div class="hero-left-content reveal">
-          <div class="hero-badge-pill">
-            <span class="status-pulse-dot"></span>
-            <span>Software Engineering Student &amp; AI Learner</span>
-          </div>
-
           <h1 class="hero-headline">
             Software Engineering &amp; <span class="highlight">AI / ML Development</span>
           </h1>
@@ -102,6 +97,21 @@
               Let's Connect <i class="fa-solid fa-paper-plane"></i>
             </a>
           </div>
+
+          <div class="hero-metrics-bar">
+            <div class="metric-item">
+              <span class="metric-val achievement-number" data-count="2">2+</span>
+              <span class="metric-lbl">Years Experience</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-val achievement-number" data-count="5">5+</span>
+              <span class="metric-lbl">AI / ML Projects</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-val">DIU</span>
+              <span class="metric-lbl">B.Sc. in SWE</span>
+            </div>
+          </div>
         </div>
 
         <div class="hero-portrait-frame reveal">
@@ -109,29 +119,30 @@
             <div class="portrait-glass-sheen"></div>
             <img src="image/profile.jpg" alt="Mohammad Tamim Munshi Mubashir" class="portrait-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80';">
           </div>
+          <div class="portrait-badge badge-bottom-left">
+            <div class="badge-icon-badge">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div class="badge-text-group">
+              <span class="badge-val">DIU Student</span>
+              <span class="badge-sub">B.Sc. in SWE</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ==========================================================================
-       3. TECH STACK MARQUEE
+       3. TECH STACK BAR
        ========================================================================== -->
     <section class="marquee-section">
-      <div class="marquee-track" aria-hidden="true">
+      <div class="marquee-track">
         <div class="marquee-item"><i class="fa-brands fa-python" style="color: #3776ab;"></i> Python</div>
         <div class="marquee-item"><i class="fa-solid fa-fire" style="color: #ee4c2c;"></i> PyTorch</div>
         <div class="marquee-item"><i class="fa-solid fa-chart-line" style="color: #f7931e;"></i> Scikit-Learn</div>
-        <div class="marquee-item"><i class="fa-solid fa-stethoscope" style="color: #2563eb;"></i> Healthcare AI</div>
-        <div class="marquee-item"><i class="fa-solid fa-bolt" style="color: #059669;"></i> FastAPI</div>
-        <div class="marquee-item"><i class="fa-solid fa-database" style="color: #336791;"></i> PostgreSQL</div>
-        <div class="marquee-item"><i class="fa-brands fa-github" style="color: #ffffff;"></i> GitHub</div>
-        <div class="marquee-item"><i class="fa-brands fa-js" style="color: #f7df1e;"></i> JavaScript</div>
-
-        <!-- Duplicated set for continuous stream -->
-        <div class="marquee-item"><i class="fa-brands fa-python" style="color: #3776ab;"></i> Python</div>
-        <div class="marquee-item"><i class="fa-solid fa-fire" style="color: #ee4c2c;"></i> PyTorch</div>
-        <div class="marquee-item"><i class="fa-solid fa-chart-line" style="color: #f7931e;"></i> Scikit-Learn</div>
-        <div class="marquee-item"><i class="fa-solid fa-stethoscope" style="color: #2563eb;"></i> Healthcare AI</div>
         <div class="marquee-item"><i class="fa-solid fa-bolt" style="color: #059669;"></i> FastAPI</div>
         <div class="marquee-item"><i class="fa-solid fa-database" style="color: #336791;"></i> PostgreSQL</div>
         <div class="marquee-item"><i class="fa-brands fa-github" style="color: #ffffff;"></i> GitHub</div>
@@ -140,46 +151,106 @@
     </section>
 
     <!-- ==========================================================================
-       4. ABOUT BRAND MANIFESTO
+       4. ABOUT BRAND MANIFESTO & PROFILE
        ========================================================================== -->
     <section id="about" class="section">
       <div class="container">
         <div class="section-head reveal">
-          <h2 class="section-title">Who I Am &amp; Learning Journey</h2>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Software Engineering Student | AI &amp; Data Science Aspirant</p>
         </div>
 
-        <div class="editorial-split-grid">
-          <div class="pull-quote-box reveal">
-            <p class="pull-quote-text">
-              "Technology in healthcare starts with strong fundamentals. My goal is to bridge software engineering principles with practical machine learning to solve real-world problems."
+        <div class="about-bento-grid reveal">
+          <!-- Left Column: Hero Bio Card -->
+          <div class="about-main-bio-card glass-card">
+            <div class="about-bio-header">
+              <span class="bio-tag-pill">
+                <span class="pulse-dot"></span> Software &amp; AI Developer
+              </span>
+              <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
+            </div>
+
+            <p class="about-bio-text">
+              I am a dedicated <strong>Software Engineering student</strong> focused on building intelligent systems and modern web applications. With a solid academic record (<span class="highlight-badge">CGPA 3.70</span>) and <strong>3+ years</strong> of hands-on coding experience, I specialize in combining Machine Learning models with full-stack technologies to deliver impactful digital solutions.
             </p>
-            <p style="color: var(--gray); font-size: 0.95rem; margin-top: 1rem;">
-              — Mohammad Tamim Munshi Mubashir, Software Engineering Student
-            </p>
+
+            <div class="about-author-row">
+              <div class="author-avatar">
+                <img src="image/profile.jpg" alt="Tamim Munshi" class="author-avatar-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80';">
+              </div>
+              <div class="author-details">
+                <span class="author-name">Tamim Munshi</span>
+                <span class="author-degree">B.Sc. in Software Engineering, Daffodil International University</span>
+              </div>
+            </div>
+
+            <div class="about-tech-inline-box">
+              <span class="inline-tech-lbl"><i class="fa-solid fa-layer-group" style="color: var(--primary);"></i> Tech Stack &amp; Core Interests</span>
+              <div class="inline-tech-chips">
+                <span class="skill-chip"><i class="fa-brands fa-python" style="color: #3776ab;"></i> Python</span>
+                <span class="skill-chip"><i class="fa-solid fa-brain" style="color: #38bdf8;"></i> Machine Learning</span>
+                <span class="skill-chip"><i class="fa-solid fa-chart-line" style="color: #f7931e;"></i> Data Science</span>
+                <span class="skill-chip"><i class="fa-solid fa-code" style="color: #2563eb;"></i> Software Engineering</span>
+                <span class="skill-chip"><i class="fa-solid fa-globe" style="color: #22c55e;"></i> Web Dev</span>
+              </div>
+            </div>
           </div>
 
-          <div class="manifesto-list reveal">
-            <div class="manifesto-item glass-card">
-              <span class="manifesto-num">01</span>
-              <div class="manifesto-body">
-                <h4 class="card-title">My Academic Focus</h4>
-                <p>Studying Software Engineering at Daffodil International University, building a solid foundation in data structures, algorithms, and web development.</p>
+          <!-- Right Column: 2x2 Highlights Grid -->
+          <div class="about-side-stats-grid">
+            <div class="about-stat-card glass-card">
+              <div class="stat-icon-wrapper blue-glow">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="stat-content">
+                <span class="stat-category">Education</span>
+                <h4 class="stat-title">B.Sc. in SWE</h4>
+                <p class="stat-desc">Daffodil International University</p>
               </div>
             </div>
 
-            <div class="manifesto-item glass-card">
-              <span class="manifesto-num">02</span>
-              <div class="manifesto-body">
-                <h4 class="card-title">AI &amp; Healthcare Passion</h4>
-                <p>Exploring how machine learning algorithms can streamline patient records, clinical data management, and predictive healthcare applications.</p>
+            <div class="about-stat-card glass-card">
+              <div class="stat-icon-wrapper green-glow">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="6"></circle>
+                  <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                </svg>
+              </div>
+              <div class="stat-content">
+                <span class="stat-category">CGPA Standing</span>
+                <h4 class="stat-title">CGPA 3.70 / 4.00</h4>
+                <p class="stat-desc">High Academic Distinction</p>
               </div>
             </div>
 
-            <div class="manifesto-item glass-card">
-              <span class="manifesto-num">03</span>
-              <div class="manifesto-body">
-                <h4 class="card-title">Engineering Mindset</h4>
-                <p>Committed to writing clean code, learning modern frameworks, and collaborating on impactful student research projects.</p>
+            <div class="about-stat-card glass-card">
+              <div class="stat-icon-wrapper purple-glow">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="18" height="12" x="3" y="4" rx="2"></rect>
+                  <line x1="2" x2="22" y1="20" y2="20"></line>
+                </svg>
+              </div>
+              <div class="stat-content">
+                <span class="stat-category">Projects</span>
+                <h4 class="stat-title">3+ Projects</h4>
+                <p class="stat-desc">Full-Stack &amp; ML Apps</p>
+              </div>
+            </div>
+
+            <div class="about-stat-card glass-card">
+              <div class="stat-icon-wrapper amber-glow">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="stat-content">
+                <span class="stat-category">Experience</span>
+                <h4 class="stat-title">3+ Years Journey</h4>
+                <p class="stat-desc">Continuous Skill Growth</p>
               </div>
             </div>
           </div>
@@ -413,16 +484,6 @@
           <div class="service-editorial-item glass-card reveal">
             <span class="service-num">01</span>
             <div class="service-title-box">
-              <h3 class="card-title">Healthcare Web Applications</h3>
-            </div>
-            <div class="service-desc-box">
-              Building patient record tools, appointment management platforms, and healthcare interface prototypes.
-            </div>
-          </div>
-
-          <div class="service-editorial-item glass-card reveal">
-            <span class="service-num">02</span>
-            <div class="service-title-box">
               <h3 class="card-title">Machine Learning Exploration</h3>
             </div>
             <div class="service-desc-box">
@@ -431,7 +492,7 @@
           </div>
 
           <div class="service-editorial-item glass-card reveal">
-            <span class="service-num">03</span>
+            <span class="service-num">02</span>
             <div class="service-title-box">
               <h3 class="card-title">Python API Integration</h3>
             </div>
@@ -441,7 +502,7 @@
           </div>
 
           <div class="service-editorial-item glass-card reveal">
-            <span class="service-num">04</span>
+            <span class="service-num">03</span>
             <div class="service-title-box">
               <h3 class="card-title">Web Frontend Development</h3>
             </div>
