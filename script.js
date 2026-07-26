@@ -250,7 +250,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </div>
       <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-        <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn-primary">
+        <a href="https://github.com/Tamim-Munshi" target="_blank" rel="noopener" class="btn btn-primary">
           <i class="fa-brands fa-github"></i> View GitHub Repository
         </a>
         <button class="btn btn-secondary" onclick="document.getElementById('caseStudyModal').classList.remove('active')">
